@@ -10,3 +10,9 @@ C:\Users\moham\Desktop\Delegate C#\POS_Medical\POS_Medical\obj\Debug\POS_Medical
 C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\bin\Debug\POS_Medical.exe.config
 C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.exe
 C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.pdb
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\bin\Debug\POS_Medical.exe
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\bin\Debug\POS_Medical.pdb
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.csprojResolveAssemblyReference.cache
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.MainForm.resources
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.Properties.Resources.resources
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.csproj.GenerateResource.Cache
