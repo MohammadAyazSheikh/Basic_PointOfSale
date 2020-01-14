@@ -30,34 +30,42 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduct));
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Panel();
             this.btnDlt = new System.Windows.Forms.Panel();
             this.panelActive = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.labelNameAdd = new System.Windows.Forms.Label();
-            this.txtNameAdd = new System.Windows.Forms.TextBox();
-            this.labelPriceAdd = new System.Windows.Forms.Label();
-            this.txtPriceAdd = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnAddProduct = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPriceAdd = new System.Windows.Forms.NumericUpDown();
+            this.labelPriceAdd = new System.Windows.Forms.Label();
+            this.txtNameAdd = new System.Windows.Forms.TextBox();
+            this.labelNameAdd = new System.Windows.Forms.Label();
             this.panelUpdate = new System.Windows.Forms.Panel();
+            this.txtIDUpdate = new System.Windows.Forms.NumericUpDown();
+            this.labelID = new System.Windows.Forms.Label();
             this.Update = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPriceUpdate = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNameUpdate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtIDUpdate = new System.Windows.Forms.NumericUpDown();
-            this.labelID = new System.Windows.Forms.Label();
+            this.panelSearchandDlt = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.IDColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PriceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelContainer.SuspendLayout();
             this.panelAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPriceAdd)).BeginInit();
             this.panelUpdate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPriceUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIDUpdate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPriceUpdate)).BeginInit();
+            this.panelSearchandDlt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContainer
@@ -75,6 +83,19 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(112, 477);
             this.panelContainer.TabIndex = 1;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBack.Location = new System.Drawing.Point(25, 41);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(65, 50);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSearch
             // 
@@ -133,19 +154,6 @@
             this.panelActive.Size = new System.Drawing.Size(93, 78);
             this.panelActive.TabIndex = 4;
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBack.Location = new System.Drawing.Point(25, 41);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(65, 50);
-            this.btnBack.TabIndex = 5;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panelAdd
             // 
             this.panelAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -155,57 +163,10 @@
             this.panelAdd.Controls.Add(this.labelPriceAdd);
             this.panelAdd.Controls.Add(this.txtNameAdd);
             this.panelAdd.Controls.Add(this.labelNameAdd);
-            this.panelAdd.Location = new System.Drawing.Point(268, 344);
+            this.panelAdd.Location = new System.Drawing.Point(318, 241);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(860, 477);
             this.panelAdd.TabIndex = 2;
-            // 
-            // labelNameAdd
-            // 
-            this.labelNameAdd.AutoSize = true;
-            this.labelNameAdd.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelNameAdd.Location = new System.Drawing.Point(193, 167);
-            this.labelNameAdd.Name = "labelNameAdd";
-            this.labelNameAdd.Size = new System.Drawing.Size(100, 38);
-            this.labelNameAdd.TabIndex = 0;
-            this.labelNameAdd.Text = "Name";
-            // 
-            // txtNameAdd
-            // 
-            this.txtNameAdd.Location = new System.Drawing.Point(312, 183);
-            this.txtNameAdd.Name = "txtNameAdd";
-            this.txtNameAdd.Size = new System.Drawing.Size(240, 20);
-            this.txtNameAdd.TabIndex = 1;
-            // 
-            // labelPriceAdd
-            // 
-            this.labelPriceAdd.AutoSize = true;
-            this.labelPriceAdd.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPriceAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelPriceAdd.Location = new System.Drawing.Point(197, 229);
-            this.labelPriceAdd.Name = "labelPriceAdd";
-            this.labelPriceAdd.Size = new System.Drawing.Size(85, 38);
-            this.labelPriceAdd.TabIndex = 2;
-            this.labelPriceAdd.Text = "Price";
-            // 
-            // txtPriceAdd
-            // 
-            this.txtPriceAdd.Location = new System.Drawing.Point(312, 234);
-            this.txtPriceAdd.Name = "txtPriceAdd";
-            this.txtPriceAdd.Size = new System.Drawing.Size(240, 20);
-            this.txtPriceAdd.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(247, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(334, 64);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Add Prodcut";
             // 
             // btnAddProduct
             // 
@@ -218,6 +179,54 @@
             this.btnAddProduct.TabIndex = 8;
             this.btnAddProduct.Text = "Add";
             this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(247, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(334, 64);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Add Prodcut";
+            // 
+            // txtPriceAdd
+            // 
+            this.txtPriceAdd.Location = new System.Drawing.Point(312, 234);
+            this.txtPriceAdd.Name = "txtPriceAdd";
+            this.txtPriceAdd.Size = new System.Drawing.Size(240, 20);
+            this.txtPriceAdd.TabIndex = 6;
+            // 
+            // labelPriceAdd
+            // 
+            this.labelPriceAdd.AutoSize = true;
+            this.labelPriceAdd.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPriceAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelPriceAdd.Location = new System.Drawing.Point(197, 229);
+            this.labelPriceAdd.Name = "labelPriceAdd";
+            this.labelPriceAdd.Size = new System.Drawing.Size(85, 38);
+            this.labelPriceAdd.TabIndex = 2;
+            this.labelPriceAdd.Text = "Price";
+            // 
+            // txtNameAdd
+            // 
+            this.txtNameAdd.Location = new System.Drawing.Point(312, 183);
+            this.txtNameAdd.Name = "txtNameAdd";
+            this.txtNameAdd.Size = new System.Drawing.Size(240, 20);
+            this.txtNameAdd.TabIndex = 1;
+            // 
+            // labelNameAdd
+            // 
+            this.labelNameAdd.AutoSize = true;
+            this.labelNameAdd.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelNameAdd.Location = new System.Drawing.Point(193, 167);
+            this.labelNameAdd.Name = "labelNameAdd";
+            this.labelNameAdd.Size = new System.Drawing.Size(100, 38);
+            this.labelNameAdd.TabIndex = 0;
+            this.labelNameAdd.Text = "Name";
             // 
             // panelUpdate
             // 
@@ -230,10 +239,28 @@
             this.panelUpdate.Controls.Add(this.label3);
             this.panelUpdate.Controls.Add(this.txtNameUpdate);
             this.panelUpdate.Controls.Add(this.label4);
-            this.panelUpdate.Location = new System.Drawing.Point(425, 74);
+            this.panelUpdate.Location = new System.Drawing.Point(182, 486);
             this.panelUpdate.Name = "panelUpdate";
             this.panelUpdate.Size = new System.Drawing.Size(860, 477);
             this.panelUpdate.TabIndex = 9;
+            // 
+            // txtIDUpdate
+            // 
+            this.txtIDUpdate.Location = new System.Drawing.Point(312, 119);
+            this.txtIDUpdate.Name = "txtIDUpdate";
+            this.txtIDUpdate.Size = new System.Drawing.Size(240, 20);
+            this.txtIDUpdate.TabIndex = 10;
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelID.Location = new System.Drawing.Point(197, 114);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(48, 38);
+            this.labelID.TabIndex = 9;
+            this.labelID.Text = "ID";
             // 
             // Update
             // 
@@ -294,29 +321,63 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Name";
             // 
-            // txtIDUpdate
+            // panelSearchandDlt
             // 
-            this.txtIDUpdate.Location = new System.Drawing.Point(312, 119);
-            this.txtIDUpdate.Name = "txtIDUpdate";
-            this.txtIDUpdate.Size = new System.Drawing.Size(240, 20);
-            this.txtIDUpdate.TabIndex = 10;
+            this.panelSearchandDlt.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelSearchandDlt.Controls.Add(this.dgv);
+            this.panelSearchandDlt.Controls.Add(this.label5);
+            this.panelSearchandDlt.Location = new System.Drawing.Point(119, 3);
+            this.panelSearchandDlt.Name = "panelSearchandDlt";
+            this.panelSearchandDlt.Size = new System.Drawing.Size(860, 477);
+            this.panelSearchandDlt.TabIndex = 10;
             // 
-            // labelID
+            // label5
             // 
-            this.labelID.AutoSize = true;
-            this.labelID.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelID.Location = new System.Drawing.Point(197, 114);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(48, 38);
-            this.labelID.TabIndex = 9;
-            this.labelID.Text = "ID";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(134, 6);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(396, 64);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "All Prodcut List";
+            // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDColumn,
+            this.NameColumn,
+            this.PriceColumn});
+            this.dgv.Location = new System.Drawing.Point(145, 97);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(347, 225);
+            this.dgv.TabIndex = 9;
+            // 
+            // IDColumn
+            // 
+            this.IDColumn.DataPropertyName = "ID";
+            this.IDColumn.HeaderText = "Product ID";
+            this.IDColumn.Name = "IDColumn";
+            // 
+            // NameColumn
+            // 
+            this.NameColumn.DataPropertyName = "Name";
+            this.NameColumn.HeaderText = "Product Name";
+            this.NameColumn.Name = "NameColumn";
+            // 
+            // PriceColumn
+            // 
+            this.PriceColumn.DataPropertyName = "Price";
+            this.PriceColumn.HeaderText = "Prodcut Price";
+            this.PriceColumn.Name = "PriceColumn";
             // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 485);
+            this.Controls.Add(this.panelSearchandDlt);
             this.Controls.Add(this.panelUpdate);
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.panelContainer);
@@ -328,8 +389,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPriceAdd)).EndInit();
             this.panelUpdate.ResumeLayout(false);
             this.panelUpdate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPriceUpdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIDUpdate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPriceUpdate)).EndInit();
+            this.panelSearchandDlt.ResumeLayout(false);
+            this.panelSearchandDlt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -359,5 +423,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNameUpdate;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelSearchandDlt;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PriceColumn;
     }
 }
