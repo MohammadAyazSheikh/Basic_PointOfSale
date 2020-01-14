@@ -16,3 +16,4 @@ C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.csprojR
 C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.MainForm.resources
 C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.Properties.Resources.resources
 C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.csproj.GenerateResource.Cache
+C:\Users\moham\Desktop\POS\POS_Medical\POS_Medical\obj\Debug\POS_Medical.FormProduct.resources

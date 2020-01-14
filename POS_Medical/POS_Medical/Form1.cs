@@ -20,8 +20,8 @@ namespace POS_Medical
         public MainForm()
         {
             InitializeComponent();
-            this.panelActive.Hide();
-           
+          
+
         }
 
 
@@ -57,28 +57,12 @@ namespace POS_Medical
         //    }
         //}
 
-    
-
-      
-
-     
-
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            panelActive.Location = new Point(btnCustomer.Location.X-13, btnCustomer.Location.Y-12);
-            panelActive.Show();
-        }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            panelActive.Location = new Point(btnProduct.Location.X - 13, btnProduct.Location.Y - 12);
-            panelActive.Show();
-        }
-
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            panelActive.Location = new Point(btnOrder.Location.X - 13, btnOrder.Location.Y - 12);
-            panelActive.Show();
+            FormProduct fp = new FormProduct();
+            fp.Show();
+            this.Hide();
         }
     }
 }
